@@ -1,0 +1,58 @@
+<div class="row justify-content-center md3">
+  <div class="col-md-4 text-center">
+    <h1>Category - TODOS</h1>
+    <p class="info-text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+      similique blanditiis ratione aliquid omnis consequuntur nisi?
+    </p>
+  </div>
+</div>
+
+<div class="row g-2 col-md-12">
+  <form action="" class="input-group align-items-center justify-content-center">
+    <div class="col-md-10 form-group">
+      <input
+        type="text"
+        placeholder="Add New Todo..."
+        name="todoText"
+        class="form-control"
+      />
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="form-control btn btn-todo ms-3">Add</button>
+    </div>
+  </form>
+</div>
+
+<div class="row todo-list justify-content-center">
+  <div class="col-md-6 col-xs-auto col-s-auto">
+    <div class="card">
+      <div class="card-body">
+        <div class="clearfix">
+          <div class="float-start text-secondary">
+            <fa-icon [icon]="['far', 'circle']" class="text-danger"></fa-icon>
+            <fa-icon [icon]="['fas', 'check']" class="text-success"></fa-icon>
+            New Todo
+          </div>
+
+          <div class="float-end text-secondary">
+            <fa-icon
+              [icon]="['far', 'check-circle']"
+              class="text-success"
+            ></fa-icon>
+            <fa-icon
+              [icon]="['far', 'times-circle']"
+              class="text-danger"
+            ></fa-icon>
+            <div class="todo-tools">
+              <small>
+                <fa-icon icon="pencil-alt" class="text-warning"></fa-icon>
+                <fa-icon icon="trash" class="text-danger"></fa-icon>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
